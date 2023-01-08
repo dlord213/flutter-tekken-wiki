@@ -48,7 +48,8 @@ class _homePageState extends State<homePage> {
             returnContainer(
                 widget: const Text(
                     "Since its initial release in 1994, the Tekken franchise has sold over 48 million copies worldwide, making it one of the most successful fighting game series of all time. With its unique blend of fast-paced action, deep strategic gameplay, and stunning visuals, Tekken has become a staple of the fighting game genre and a fan-favorite for millions of gamers around the world.")),
-            createTextWithImage(imagePath: "cover_art/tekken_8.jpg", heading: "TEKKEN 8"),
+            createTextWithImage(
+                imagePath: "cover_art/tekken_8.jpg", heading: "TEKKEN 8"),
             returnContainer(
                 widget: const Text(
                     "This app is about about the fighting game series that follows the events of the King of Iron Fist Tournament, hosted by the Mishima Zaibatsu, where players can play a plethora of characters to win the tournament and gain control of the company."))
@@ -147,6 +148,7 @@ class _gamesPageState extends State<gamesPage> {
                       description:
                           "It was released in Japanese arcades on November 26, 2007 as the first game running on the PlayStation 3-based System 357 arcade board and is the sixth main installment in the Tekken franchise and the first multi-platform title. Compared to Tekken 5, notable changes in Tekken 6 were improved physics, the new Bound and Rage systems."),
                   createInkWellCard(
+                      mainRoute: const tekkenSevenPage(),
                       webP: true,
                       fileName: "tekken_7",
                       description:
