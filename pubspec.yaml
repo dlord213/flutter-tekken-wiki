@@ -80,6 +80,8 @@ flutter:
     - assets/tekken_tag/
     - assets/tekken_tag_2/
     - assets/tekken_revolution/
+    - assets/memes/
+    - assets/portrait_menu_characters/
 
   fonts:
   - family: Work Sans

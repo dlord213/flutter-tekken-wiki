@@ -124,7 +124,7 @@ class Assets {
   static const String tekken11 = 'assets/tekken_1/1.webp';
   static const String tekken12 = 'assets/tekken_1/2.webp';
   static const String tekken1Anna = 'assets/tekken_1/anna.webp';
-  static const String tekken1Armor king = 'assets/tekken_1/armor king.webp';
+  static const String tekken1Armorking = 'assets/tekken_1/armor king.webp';
   static const String tekken1Devil = 'assets/tekken_1/devil.webp';
   static const String tekken1Ganryu = 'assets/tekken_1/ganryu.webp';
   static const String tekken1Heihachi = 'assets/tekken_1/heihachi.webp';
@@ -147,7 +147,7 @@ class Assets {
   static const String tekken2Alex = 'assets/tekken_2/alex.webp';
   static const String tekken2Angel = 'assets/tekken_2/angel.webp';
   static const String tekken2Anna = 'assets/tekken_2/anna.webp';
-  static const String tekken2Armor king = 'assets/tekken_2/armor king.webp';
+  static const String tekken2Armorking = 'assets/tekken_2/armor king.webp';
   static const String tekken2Baek = 'assets/tekken_2/baek.webp';
   static const String tekken2Bruce = 'assets/tekken_2/bruce.webp';
   static const String tekken2Devil = 'assets/tekken_2/devil.webp';
@@ -195,7 +195,7 @@ class Assets {
   static const String tekken3Ogre = 'assets/tekken_3/ogre.webp';
   static const String tekken3Paul = 'assets/tekken_3/paul.webp';
   static const String tekken3Tiger = 'assets/tekken_3/tiger.webp';
-  static const String tekken3True ogre = 'assets/tekken_3/true ogre.webp';
+  static const String tekken3Trueogre = 'assets/tekken_3/true ogre.webp';
   static const String tekken3Xiaoyu = 'assets/tekken_3/xiaoyu.webp';
   static const String tekken3Yoshi = 'assets/tekken_3/yoshi.webp';
   static const String tekken4Bryan = 'assets/tekken_4/bryan.webp';
@@ -276,7 +276,7 @@ class Assets {
   static const String tekken5Yoshi = 'assets/tekken_5/yoshi.webp';
   static const String tekken6Alisa = 'assets/tekken_6/alisa.webp';
   static const String tekken6Anna = 'assets/tekken_6/anna.webp';
-  static const String tekken6Armor king = 'assets/tekken_6/armor king.webp';
+  static const String tekken6Armorking = 'assets/tekken_6/armor king.webp';
   static const String tekken6Asuka = 'assets/tekken_6/asuka.webp';
   static const String tekken6Azael = 'assets/tekken_6/azael.webp';
   static const String tekken6Baek = 'assets/tekken_6/baek.webp';
@@ -328,7 +328,7 @@ class Assets {
   static const String tekken7Akuma = 'assets/tekken_7/akuma.webp';
   static const String tekken7Alisa = 'assets/tekken_7/alisa.webp';
   static const String tekken7Anna = 'assets/tekken_7/anna.webp';
-  static const String tekken7Armor king = 'assets/tekken_7/armor king.webp';
+  static const String tekken7Armorking = 'assets/tekken_7/armor king.webp';
   static const String tekken7Asuka = 'assets/tekken_7/asuka.webp';
   static const String tekken7Bob = 'assets/tekken_7/bob.webp';
   static const String tekken7Bowl = 'assets/tekken_7/bowl.gif';
@@ -414,7 +414,7 @@ class Assets {
   static const String tekkenTag2Alisa = 'assets/tekken_tag_2/alisa.webp';
   static const String tekkenTag2Angel = 'assets/tekken_tag_2/angel.webp';
   static const String tekkenTag2Anna = 'assets/tekken_tag_2/anna.webp';
-  static const String tekkenTag2Armor king = 'assets/tekken_tag_2/armor king.webp';
+  static const String tekkenTag2Armorking = 'assets/tekken_tag_2/armor king.webp';
   static const String tekkenTag2Asuka = 'assets/tekken_tag_2/asuka.webp';
   static const String tekkenTag2Baek = 'assets/tekken_tag_2/baek.webp';
   static const String tekkenTag2Ball = 'assets/tekken_tag_2/ball.jpg';
@@ -426,11 +426,11 @@ class Assets {
   static const String tekkenTag2Combo2 = 'assets/tekken_tag_2/combo_2.gif';
   static const String tekkenTag2Combot = 'assets/tekken_tag_2/combot.webp';
   static const String tekkenTag2Devil = 'assets/tekken_tag_2/devil.webp';
-  static const String tekkenTag2Dr b = 'assets/tekken_tag_2/dr b.webp';
+  static const String tekkenTag2Drb = 'assets/tekken_tag_2/dr b.webp';
   static const String tekkenTag2Dragunov = 'assets/tekken_tag_2/dragunov.webp';
   static const String tekkenTag2Eddy = 'assets/tekken_tag_2/eddy.webp';
   static const String tekkenTag2Feng = 'assets/tekken_tag_2/feng.webp';
-  static const String tekkenTag2Forest law = 'assets/tekken_tag_2/forest law.webp';
+  static const String tekkenTag2Forestlaw = 'assets/tekken_tag_2/forest law.webp';
   static const String tekkenTag2Ganryu = 'assets/tekken_tag_2/ganryu.webp';
   static const String tekkenTag2Heihachi = 'assets/tekken_tag_2/heihachi.webp';
   static const String tekkenTag2Hwoarang = 'assets/tekken_tag_2/hwoarang.webp';
@@ -468,7 +468,7 @@ class Assets {
   static const String tekkenTag2Slimbob = 'assets/tekken_tag_2/slimbob.webp';
   static const String tekkenTag2Steve = 'assets/tekken_tag_2/steve.webp';
   static const String tekkenTag2Tiger = 'assets/tekken_tag_2/tiger.webp';
-  static const String tekkenTag2True ogre = 'assets/tekken_tag_2/true ogre.webp';
+  static const String tekkenTag2Trueogre = 'assets/tekken_tag_2/true ogre.webp';
   static const String tekkenTag2Unknown = 'assets/tekken_tag_2/unknown.webp';
   static const String tekkenTag2Violet = 'assets/tekken_tag_2/violet.webp';
   static const String tekkenTag2Wang = 'assets/tekken_tag_2/wang.webp';
@@ -478,7 +478,7 @@ class Assets {
   static const String tekkenTagAlex = 'assets/tekken_tag/alex.webp';
   static const String tekkenTagAngel = 'assets/tekken_tag/angel.webp';
   static const String tekkenTagAnna = 'assets/tekken_tag/anna.webp';
-  static const String tekkenTagArmor king = 'assets/tekken_tag/armor king.webp';
+  static const String tekkenTagArmorking = 'assets/tekken_tag/armor king.webp';
   static const String tekkenTagBaek = 'assets/tekken_tag/baek.webp';
   static const String tekkenTagBowl = 'assets/tekken_tag/bowl.webp';
   static const String tekkenTagBruce = 'assets/tekken_tag/bruce.webp';
@@ -532,7 +532,7 @@ class Assets {
   static const String tekkenTagStages9 = 'assets/tekken_tag/stages/9.webp';
   static const String tekkenTagTetsujin = 'assets/tekken_tag/tetsujin.webp';
   static const String tekkenTagTiger = 'assets/tekken_tag/tiger.webp';
-  static const String tekkenTagTrue ogre = 'assets/tekken_tag/true ogre.webp';
+  static const String tekkenTagTrueogre = 'assets/tekken_tag/true ogre.webp';
   static const String tekkenTagUnknown = 'assets/tekken_tag/unknown.webp';
   static const String tekkenTagWang = 'assets/tekken_tag/wang.webp';
   static const String tekkenTagXiaoyu = 'assets/tekken_tag/xiaoyu.webp';

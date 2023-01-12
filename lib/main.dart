@@ -111,11 +111,11 @@ class _MainApplicationState extends State<MainApplication> {
   var pageIndex = [
     const homePage(),
     const gamesPage(),
+    const charactersPage(),
   ];
 
   @override
   Widget build(BuildContext context) {
-    var mediaSize = MediaQuery.of(context).size;
     return SafeArea(
       child: Scaffold(
         body: LayoutBuilder(
@@ -140,6 +140,8 @@ class _MainApplicationState extends State<MainApplication> {
                     icon: Icon(Icons.home_outlined), label: "Home"),
                 NavigationDestination(
                     icon: Icon(Icons.videogame_asset_outlined), label: "Games"),
+                NavigationDestination(
+                    icon: Icon(Icons.person_outline_outlined), label: "Characters"),
               ],
             ),
           ),

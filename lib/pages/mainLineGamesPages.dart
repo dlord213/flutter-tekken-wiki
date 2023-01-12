@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_sticky_header/flutter_sticky_header.dart';
-
 import 'package:tekken_wiki/reusable_widgets.dart';
 
 class tekkenOnePage extends StatefulWidget {

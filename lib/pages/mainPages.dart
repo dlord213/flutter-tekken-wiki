@@ -53,8 +53,9 @@ class _homePageState extends State<homePage> {
                 imagePath: "cover_art/tekken_8.jpg", heading: "TEKKEN 8"),
             returnContainer(
                 widget: const Text(
-                    "This app is about about the fighting game series that follows the events of the King of Iron Fist Tournament, hosted by the Mishima Zaibatsu, where players can play a plethora of characters to win the tournament and gain control of the company."))
-          ])),
+                    "This app is about about the fighting game series that follows the events of the King of Iron Fist Tournament, hosted by the Mishima Zaibatsu, where players can play a plethora of characters to win the tournament and gain control of the company.")),
+                createTextWithImage(imagePath: "memes/wow.gif", heading: "WOW LAW."),
+              ])),
         ),
       ],
     );
@@ -109,7 +110,7 @@ class _gamesPageState extends State<gamesPage> {
         body: CustomScrollView(
           slivers: [
             SliverStickyHeader(
-                header: createContainerHeader(title: "Main Games"),
+                header: const createContainerHeader(title: "Main Games"),
                 sliver: SliverList(
                     delegate: SliverChildListDelegate([
                   createInkWellCard(
@@ -149,7 +150,7 @@ class _gamesPageState extends State<gamesPage> {
                       description: "The latest installment in Tekken series and  runs on Unreal Engine 4, making it the first game of the series to run on this engine. The console version is based on said update. Since its first release, the game has subsequently been released in several editions with access to different downloadable content."),
                 ]))),
             SliverStickyHeader(
-              header: createContainerHeader(title: "Spin-off Games"),
+              header: const createContainerHeader(title: "Spin-off Games"),
               sliver: SliverList(
                 delegate: SliverChildListDelegate([
                   createInkWellCard(
@@ -159,11 +160,65 @@ class _gamesPageState extends State<gamesPage> {
                       description: "The fourth installment in the Tekken fighting game series and a spin-off of the main series, focusing on tag team battles. It is not canonical to the Tekken storyline. The game was originally available as an update kit for Tekken 3, running on the same System 12 arcade board. Tekken Tag Tournament was first released on arcades in 1999. It was ported to the PlayStation 2 home console in 2000, though the PS2 version ran on an enhanced game engine with better graphics, which allowed the characters and stages to appear less angular and more detailed."),
                   createInkWellCard(mainRoute: const tekkenTagTwoPage(), webP: true, fileName: "tekken_tag_2", description: "The successor to 1999's Tekken Tag Tournament. The game was released in Japanese arcades on September 14, 2011, with a playable demo for the PlayStation 3 included with the Tekken Hybrid collection, released in North America and Europe in November 2011. An update for the arcade version, Tekken Tag Tournament 2 Unlimited, was released on March 27, 2012 in Japan. A home version based on the update was released on September 11, 2012 for the PlayStation 3 and Xbox 360. It was also ported to the Wii U as one of the system's launch titles in November 2012, subtitled Wii U Edition and featuring bonus exclusive content. Tekken Tag Tournament 2 focuses on tag team battles. As an expansive non-canonical game, it has a large roster of 61 characters, more than any other title in the Tekken series. While originally intended to only feature current characters from the canon Tekken 6, the revival of Jun Kazama as a playable character."),
                   createInkWellCard(mainRoute: const tekkenRevolutionPage(), webP: true, fileName: "tekken_revolution", description: "A free-to-play downloadable fighting game on the PlayStation Network, exclusively released for PlayStation 3 in June 2013. It has been praised for bringing back the arcade experience to the console. It also features many similar aspects with role-playing games and social games. Bandai Namco revealed that it and its downloadable content would be removed from the PlayStation Store on January 21st, 2017. The game officially ceased operations on March 20th, 2017."),
-
                 ]),
               ),
             )
           ],
         ));
+  }
+}
+
+class charactersPage extends StatefulWidget {
+  const charactersPage({Key? key}) : super(key: key);
+
+  @override
+  State<charactersPage> createState() => _charactersPageState();
+}
+
+class _charactersPageState extends State<charactersPage> {
+
+  var headingFontStyle = const TextStyle(fontWeight: FontWeight.w600, fontSize: 24);
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: const Text("Characters")),
+        body: ListView(
+          children: [
+            returnContainer(widget: Text("The Mishimas", style: headingFontStyle)),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: const [
+                  createSlideCharacterIcon(fileName: "jin.jpg", charName: "Jin Kazama", mainRoute: homePage()),
+                  createSlideCharacterIcon(fileName: "kazuya.jpg", charName: "Kazuya Mishima", mainRoute: homePage()),
+                  createSlideCharacterIcon(fileName: "lee.jpg", charName: "Lee Chaolan", mainRoute: homePage()),
+                  createSlideCharacterIcon(fileName: "jinpachi.png", charName: "Jinpachi Mishima", mainRoute: homePage()),
+                  createSlideCharacterIcon(fileName: "heihachi.png", charName: "Heihachi Mishima", mainRoute: homePage()),
+                  createSlideCharacterIcon(fileName: "kazumi.webp", charName: "Kazumi Mishima", mainRoute: homePage()),
+                  createSlideCharacterIcon(fileName: "lars.webp", charName: "Lars Alexandersson", mainRoute: homePage()),
+                  createSlideCharacterIcon(fileName: "jun.webp", charName: "Jun Kazama", mainRoute: homePage()),
+                  createSlideCharacterIcon(fileName: "asuka.webp", charName: "Asuka Kazama", mainRoute: homePage()),
+                ],
+              ),
+            ),
+            returnContainer(widget: Text("Iconic Characters", style: headingFontStyle)),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: const [
+                  createSlideCharacterIcon(fileName: "king.webp", charName: "King (II)", mainRoute: homePage()),
+                  createSlideCharacterIcon(fileName: "paul.webp", charName: "Paul Phoenix", mainRoute: homePage()),
+                  createSlideCharacterIcon(fileName: "nina.webp", charName: "Nina Williams", mainRoute: homePage()),
+                  createSlideCharacterIcon(fileName: "eddy.jpg", charName: "Eddy Gordo", mainRoute: homePage()),
+                  createSlideCharacterIcon(fileName: "bryan.webp", charName: "Bryan Fury", mainRoute: homePage()),
+                ],
+              ),
+            ),
+          ],
+        )
+      ),
+    );
   }
 }
