@@ -149,7 +149,7 @@ class _tekkenTagTwoPageState extends State<tekkenTagTwoPage> {
       child: Scaffold(
         body: CustomScrollView(
           slivers: [
-            returnSliverAppBar(title: "TEKKEN TAG TOURNAMENT 2", logo: "tekken_tag_2", isWebP: true),
+            returnSliverAppBar(title: "TEKKEN TAG 2", logo: "tekken_tag_2", isWebP: true),
             SliverStickyHeader(
               header: createContainerHeader(title: "Story"),
               sliver: SliverList(delegate: SliverChildListDelegate([
@@ -304,6 +304,96 @@ class _tekkenTagTwoPageState extends State<tekkenTagTwoPage> {
             )
           ],
         ),
+      ),
+    );
+  }
+}
+
+class tekkenRevolutionPage extends StatefulWidget {
+  const tekkenRevolutionPage({Key? key}) : super(key: key);
+
+  @override
+  State<tekkenRevolutionPage> createState() => _tekkenRevolutionPageState();
+}
+
+class _tekkenRevolutionPageState extends State<tekkenRevolutionPage> {
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+        body: CustomScrollView(
+          slivers: [
+            returnSliverAppBar(title: "TEKKEN REVOLUTION", logo: "tekken_revolution", isWebP: true),
+            SliverStickyHeader(
+              header: createContainerHeader(title: "Gameplay"),
+              sliver: SliverList(delegate: SliverChildListDelegate([
+                const Padding(
+                  padding: EdgeInsets.all(12.0),
+                  child: Text("The Bound system introduced in Tekken 6 has been removed and as a consequence, combos utilizing that mechanic have become obsolete. However, the ability to temporarily stagger the opponent still remains but has been limited to certain strings landing when not already in a combo state, or from floor breaks."),
+                ),
+                createTextWithImage(imagePath: "tekken_revolution/gameplay.jpg", heading: "Gameplay"),
+                const Padding(
+                  padding: EdgeInsets.all(12.0),
+                  child: Text("Two new gameplay mechanics have been introduced. These are Critical Arts and Special Arts. Critical Arts are essentially moves that have a chance of dealing extra damage (critical hit). Special Arts are that moves have been given a small window of invincibility and increased hitbox relative to Tekken Tag Tournament 2. These new gameplay mechanics are easily noticeable by a visual effect added to the move animation and, in the case of Special Arts, using the vocal grunt of their strongest attack (usually an unblockable move or signature move). Each character has 4 Critical Arts and 1 Special Art."),
+                ),
+                createTextWithImage(imagePath: "tekken_revolution/1.webp", heading: "Gameplay")
+              ])),
+            ),
+            SliverStickyHeader(
+              header: createContainerHeader(title: "Character Enhancement"),
+              sliver: SliverList(delegate: SliverChildListDelegate([
+                const Padding(
+                  padding: EdgeInsets.all(12.0),
+                  child: Text("Tekken Revolution is the first in the series to include a micromanagement type system akin to that of a role-playing game. This new gameplay mechanic consists of allocating Skill Points to either one of three stats; Power, Endurance or Vigor.\n\nPower/Strength increases the amount of base damage inflicted, Endurance/Toughness increases the health gauge and Vigor/Spirit increases the critical hit chance and chance of entering rage mode."),
+                ),
+                createTextWithImage(imagePath: "tekken_revolution/stats.jpg", heading: "Stats"),
+                const Padding(
+                  padding: EdgeInsets.all(12.0),
+                  child: Text("This mechanic provides a major added play incentive but tends to unbalance matches by favoring players who have grinded out their character's stats their most, regardless of their skill. In addition to this, Reset Drinks are available to reset any character's stats back to zero."),
+                )
+              ])),
+            ),
+            SliverStickyHeader(
+              header: createContainerHeader(title: "Game Modes"),
+              sliver: SliverList(delegate: SliverChildListDelegate([
+                const Padding(
+                  padding: EdgeInsets.all(12.0),
+                  child: Text("There are four game modes. The game modes are Arcade Mode (Normal, Hard, Very Hard), Online VS (Ranked Match or Player Match), Warm-up Space (Practice Mode), Mokujin Rush (Normal or Turbo).\n\nArcade Mode in Tekken Revolution is very similar to that of previous titles. There are 8 total stages with 2 rounds each. The 8th stage being a Boss fight and 7th stage being a sub-boss fight. The player is awarded fight money and gift points upon winning the stages."),
+                ),
+                createTextWithImage(imagePath: "tekken_revolution/menu.webp", heading: "Main Menu"),
+                const Padding(
+                  padding: EdgeInsets.all(12.0),
+                  child: Text("There is also a special feature in Arcade mode. The higher the difficulty selected, the higher the chance of facing a secret sub-boss in the 7th round. These secret sub-bosses give extra rewards if defeated."),
+                ),
+                const Padding(
+                  padding: EdgeInsets.all(12.0),
+                  child: Text("Online VS -  The Online mode in Tekken Revolution is very similar to Tekken Tag Tournament 2; with the exception of being able to enable/disable Character Enhancement. Ranked Match, matches count towards rank. Player Match, rank is not affected. Search Session and Create Session can be selected. Premium Session, play against other players in Player Match without coin consumption for 60 minutes."),
+                ),
+                const Padding(
+                  padding: EdgeInsets.all(12.0),
+                  child: Text("Warm-up Space - Practice indefinitely without coin consumption. (Wall-Off or Wall) stages may be selected. Command Lists are available with command display. Only freestyle mode is available and the training dummy is Mokujin."),
+                ),
+                const Padding(
+                  padding: EdgeInsets.all(12.0),
+                  child: Text("Mokujin Rush - A limited time event mode and brand new to the Tekken series. Consumes 1 Mokujin Ticket. Players may also expend their Premium tickets/coins to enter this mode. Fight constantly spawning Mokujins (Mokujin, Tetsujin, Kinjin). There are 8 stages in total with 2 rounds each. In the 7th stage, Tetsujin is always fought and in the 8th stage, Kinjin is guaranteed to spawn. Rewards increase with consecutive victories. After the version 1.03 update, the number of matches has been reduced to 3."),
+                ),
+                const Padding(
+                  padding: EdgeInsets.all(12.0),
+                  child: Text("Turbo Battle, In celebration of the version 1.03 update, a Mokujin Festival event was held introducing a new gameplay mechanic. A turbo mode, similar to that of the Street Fighter series, was added. Essentially, gameplay speed has been increased dramatically. However, this was only limited to the Mokujin Rush mode. It occurs randomly whenever a player enters the Mokujin Rush mode."),
+                ),
+                const Padding(
+                  padding: EdgeInsets.all(12.0),
+                  child: Text("Players also have a level associated with their account. The higher their level, the more points they can allocate to their characters. The player starts off with 4 Skill Points and is awarded 4 Skill Points per level for each character. For example, a level 10 player will have 40 total skill points and may allocate up to 40 skill points to each character. However, there is another mechanic called Fight Money that limits how many skill points a player can allocate at a time. Each skill point costs a certain amount of G(Gold) and the cost gradually increases with each stat point.  Players can increase their level by gaining experience points in either Arcade or Online Battle. The current level cap is 80."),
+                ),
+                createTextWithImage(heading: "Character Selection",  imagePath: "tekken_revolution/selection.jpg"),
+                const Padding(
+                  padding: EdgeInsets.all(12.0),
+                  child: Text("The Ranking system in Tekken Revolution is a modified version of Tekken Tag Tournament 2's. The current rank cap is Tekken God (32nd Dan)."),
+                ),
+              ])),
+            ),
+          ],
+        )
       ),
     );
   }

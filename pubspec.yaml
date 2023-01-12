@@ -79,6 +79,7 @@ flutter:
     - assets/tekken_7/
     - assets/tekken_tag/
     - assets/tekken_tag_2/
+    - assets/tekken_revolution/
 
   fonts:
   - family: Work Sans
